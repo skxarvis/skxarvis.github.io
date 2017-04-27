@@ -2,7 +2,6 @@
 #
 # Jekyll category page generator.
 # http://recursive-design.com/projects/jekyll-plugins/
-#
 # Version: 0.2.4 (201210160037)
 #
 # Copyright (c) 2010 Dave Perrett, http://recursive-design.com/
