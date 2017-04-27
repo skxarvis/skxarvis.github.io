@@ -1,22 +1,25 @@
-name: Twister
-description: a powerful jekyll theme
+name: Satwik Kansal
+description: Collection of my projects so far!
 url: #place url
 gems: [jekyll-paginate]
 baseurl: #place folder name if site is served in subfolder
 permalink: /:title/
-paginate: 8
+paginate: 6
 paginate_path: /page/:num/
 tag_dir: /tag
 category_dir: /category
 author_dir: /author
 author_title_prefix: 'Posted by '
+author_default_avatar: 'https://www.gravatar.com/avatar/763a2074e6b54615855a13656f2cb717'
 media_folder: /img
-author_default_avatar: /profile-pic.jpg
 tumblr: "#"
 pinterest: "#"
 instagram: "#"
 twitter: "#"
-facebook: "#"
+facebook: "https://www.facebook.com/satwikkansal"
+linkedin: "https://in.linkedin.com/satwikkansal"
+github: "https://www.github.com/satwikkansal"
+devpost: "https://devpost.com/xarvis"
 youtube: "#"
 vimeo: "#"
 soundcloud: "#"
