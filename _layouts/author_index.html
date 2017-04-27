@@ -1,14 +1,11 @@
 ---
 layout: index
 ---
-{% assign the_author = site.data.authors | where: 'id', page.author %}
-{% for author in the_author %}
+<!-- {% assign author = site.data.authors %}
 <div class="authorbox">
     <div class="avatar">
         {% if author.avatar %}
-            <img src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}{{ author.avatar }}" alt="{{ author.id }} avatar">
-        {% else %}
-            <img src="{{ site.baseurl | replace: '//', '/' }}/{{ site.media_folder | replace: '//', '/'}}/{{ site.author_default_avatar }}" alt="avatar">
+            <img src="{{ author.avatar }}" alt="{{ author.id }} avatar">
         {% endif %}
     </div>
     <div class="info">
@@ -42,8 +39,8 @@ layout: index
             </p>
         {% endif %}
     </div>
- </div>
-{% endfor %}
+ </div> -->
+{% include author_box.html %}
 
 {% for post in site.posts %}
     {% if post.author contains page.author %}

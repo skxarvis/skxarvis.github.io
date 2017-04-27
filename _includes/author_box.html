@@ -1,0 +1,24 @@
+{% assign author = site.data.authors %}
+<div class="authorbox">
+    <div class="avatar">
+        {% if author.avatar %}
+            <img src="{{ author.avatar }}" alt="{{ author.id }} avatar">
+        {% endif %}
+    </div>
+    <div class="info">
+        <h3 class="author_name">
+            {% if author.id %}
+                Projects by @{{ author.id }}
+            {% endif %}
+
+        </h3>
+        {% if author.bio%}
+            <p class="bio">{{ author.bio }}</p>
+        {% endif %}
+        {% if author.facebook or author.twitter or author.instagram or author.email %}
+            <!-- <p class="social">
+                {% include icon_nav.html %}
+            </p> -->
+        {% endif %}
+    </div>
+ </div>

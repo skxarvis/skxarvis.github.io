@@ -1,13 +1,9 @@
--
-  id: someone
-  name: Some Person
-  avatar: /profile-pic.jpg
-  bio: this is some more information about the author.
-  facebook: https://www.facebook.com/someone
-  twitter: https://twitter.com/someone
-  instagram: http://instagram.com/someone
-  email: someone@something.com
--
-  id: person
-  avatar: /profile-pic.jpg
-  bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quidem.
+id: satwikkansal
+name: Satwik Kansal
+avatar: https://www.gravatar.com/avatar/763a2074e6b54615855a13656f2cb717.jpg
+bio: A Freelance Software Developer and Open Source enthusiast. Passionate about technologies like Blockchain, AR/VR and Machine Learning.
+facebook: https://www.facebook.com/satwikkansal
+twitter: https://twitter.com/satwikkansal
+instagram: http://instagram.com/_satwik
+email: satwikkansal@gmail.com
+
