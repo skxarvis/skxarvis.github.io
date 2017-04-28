@@ -6,10 +6,10 @@ $line: 1px solid $sand;
 //---------------------------------------------
 // General
 $main_font-family: $roboto;
-$main_font-weight: $light;
+$main_font-weight: $medium;
 $body_bg-color: $white;
-$body_bg-img: url(/img/sirl.jpg); // adjust if you use baseurl, place this before as it will not automatically be added
-$main_color: $black;
+$body_bg-img: url(/img/circles.png); // adjust if you use baseurl, place this before as it will not automatically be added
+$main_color: $mediumgray;
 $root_font_size: 20px;
 $general_line-height: 1.5;
 
@@ -18,11 +18,11 @@ $sidebarcollapse: 1330px;
 $layoutswitch_a_color: $blue;
 $layoutswitch_a_hover_color: $green;
 // Headings
-$h_font-weight: $medium;
-$h_text_transform: none;
+$h_font-weight: $dark;
+$h_text_transform: capitalize;
 
 // Links
-$a_color: $magenta;
+$a_color: $darkgray;
 $a_hover_color: $blue;
 $a_line: $blue 1px solid;
 

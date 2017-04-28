@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve  --no-watch"
+                command: "jekyll serve  --watch"
             },
             jekyllBuild: {
                 command: "jekyll build"
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 
     // Default task(s).
 
-    grunt.registerTask("serve", ["shell:jekyllServe"]);
+    grunt.registerTask("serve", ["sass", "shell:jekyllServe"]);
     grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };

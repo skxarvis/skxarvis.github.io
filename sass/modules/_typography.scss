@@ -65,10 +65,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+
 // Font Weights
 $black: 900;
+$dark: 750;
 $medium: 500;
 $light: 300;
 
 // Font Variables
-$roboto: "Roboto", "Calibri", "Arial", sans-serif;
+$roboto: -apple-system, ".SFNSText-Regular", "San Francisco", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !default;
+$serif                      : Georgia, Times, serif !default;
+$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI",

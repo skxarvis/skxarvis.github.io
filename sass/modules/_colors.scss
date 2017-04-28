@@ -1,15 +1,33 @@
-$white: #FDFDFD;
+$white: #FFFFFF;
 $black: #121212;
 
-$darkgray: #333;
-$gray: #5f5f5f;
-$mediumgray: #C7C6C5;
-$lightgray: #e3e3e3;
 
 // twister colors
 $green: #AEB9A0;
-$magenta: #494E52;
+$magenta: #7A8288;
 $coal: #4A4240;
 $blue: #505879;
 $lightblue: #9BA4B5;
 $sand: #E6DED6;
+
+/*
+   Colors
+   ========================================================================== */
+
+$gray                       : #7a8288 !default;
+$mediumgray                 : mix(#000, $gray, 40%) !default;
+$darkgray                   : mix(#000, $gray, 50%) !default;
+$lightgray                 : mix(#fff, $gray, 50%) !default;
+
+$body-color                 : #fff !default;
+$background-color           : #fff !default;
+$code-background-color      : #fafafa !default;
+$code-background-color-dark : $lightgray !default;
+$text-color                 : $darkgray !default;
+$border-color               : $lightgray !default;
+
+$primary-color              : #7a8288 !default;
+$success-color              : #62c462 !default;
+$warning-color              : #f89406 !default;
+$danger-color               : #ee5f5b !default;
+$info-color                 : #52adc8 !default;

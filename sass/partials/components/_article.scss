@@ -39,19 +39,30 @@ article{
         }
     }
 
-    .date{
-        .index &{
-            font-size: .7em;
-            opacity: .6;
-            position: absolute;
-            bottom: 10px;
-            left: 5px;
+    
+
+    .article-items{
+        list-style: none;
+        font-size: .7em;
+        opacity: .7;
+        padding: 5px;
+        a {
+            text-decoration:none !important;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 5px 25px 5px 0px;
+
+        }
+        li + li::before {
+            content: "|    ";
         }
     }
 
     .post_content{
         .index &{
-            padding-bottom: 50px;
+            padding-bottom: 20px;
         }
     }
 

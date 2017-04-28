@@ -40,12 +40,32 @@
     {% endif %}
     {% if post.category %}
         <span class="category">
-            {{ post.category }}
+            {{ post.category[0] }}
         </span>
+    {% endif %}
+    {% if post.category[1] %}
+        {% for category in post.category[] %}
+            {% if category != post.category[0] %}
+            | <span class="category">
+                {{ category }}
+            </span>
+            {% endif %}
+        {% endfor %}
     {% endif %}
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">
         <h1>{{ post.title }}</h1>
     </a>
     <p class="post_content">{{ post.content | strip_html | truncatewords: 15 }}</p>
-    <span class="date"><i class="fa fa-calendar"></i> {{ post.date | date: '%B %d, %Y' }}</span>
+    <ul class="article-items">
+        <li><i class="fa fa-calendar"></i> {{ post.date | date: '%B %d, %Y' }}</li>
+        {% if post.github %}
+            <li><a href="{{ post.github }}" style="text-decoration: none;"><i class="fa fa-github"> Github</a></i></li>
+        {% endif %}
+        {% if post.live_demo %}
+            <li><a href="{{ post.live_demo }}">Demo</a></li>
+        {% endif %}
+        {% if post.ocassion %}
+            <li>Built for: {{ post.ocassion }}</li>
+        {% endif %}
+    </ul>
 </article>
