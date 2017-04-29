@@ -14,7 +14,12 @@ $authorbox_collapse: 510px;
         max-width: $avatar_width;
 
         img{
-            border-radius: 50em;
+            border-radius: 5px;
+            opacity: 0.8;
+        }
+
+        img:hover{
+            opacity: 1.0;
         }
 
         @media screen and (max-width: $authorbox_collapse){
@@ -27,6 +32,8 @@ $authorbox_collapse: 510px;
 
     .info{
         $avatar: $avatar_width + 20px; // 20px being the right padding of the avatar container
+        display: flex;
+        align-items: center !important;
 
         @include flexbox(row, wrap, flex-start,flex-start);
         width: 100%;

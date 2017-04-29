@@ -32,11 +32,17 @@ article{
     .category,
     .tags {
         text-transform: uppercase;
-
         .index &{
             font-size: .7em;
-            opacity: .6;
+            opacity: .7;
+            display: inline-block;
+            padding: 5px;
+            margin-left: 5px;
         }
+    }
+
+    .separator {
+            color: $lightgray;
     }
 
     
@@ -46,17 +52,17 @@ article{
         font-size: .7em;
         opacity: .7;
         padding: 5px;
+        margin-bottom: 10px;
         a {
-            text-decoration:none !important;
+            color: $coal;
         }
         li{
             list-style: none;
             display: inline-block;
-            padding: 5px 25px 5px 0px;
-
-        }
-        li + li::before {
-            content: "|    ";
+            padding: 4px;
+            margin-right: 8px;
+            border: 1px solid $lightgray;
+            border-radius: 8px;
         }
     }
 

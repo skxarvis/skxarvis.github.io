@@ -38,20 +38,21 @@
             {% endif %}
         {% endif %}
     {% endif %}
-    {% if post.category %}
-        <span class="category">
-            {{ post.category[0] }}
-        </span>
+
+    {% if post.category[0] %}
+                <div class="category">
+                    {{ post.category[0] }}
+                </div> 
     {% endif %}
-    {% if post.category[1] %}
-        {% for category in post.category[] %}
+
+    {% for category in post.category %}
             {% if category != post.category[0] %}
-            | <span class="category">
-                {{ category }}
-            </span>
+                <span class="separator">|</span>
+                <div class="category">
+                    {{ category }}
+                </div> 
             {% endif %}
-        {% endfor %}
-    {% endif %}
+    {% endfor %}
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/'}}">
         <h1>{{ post.title }}</h1>
     </a>

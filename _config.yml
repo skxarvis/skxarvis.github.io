@@ -12,17 +12,20 @@ author_dir: /author
 author_title_prefix: 'Projects by '
 author_default_avatar: 'https://www.gravatar.com/avatar/763a2074e6b54615855a13656f2cb717'
 media_folder: /img
-tumblr: "#"
-pinterest: "#"
-instagram: "#"
-twitter: "#"
+# tumblr: "#"
+# pinterest: "#"
+# instagram: "#"
+twitter: "https://twitter.com/satwikkansal"
 facebook: "https://www.facebook.com/satwikkansal"
 linkedin: "https://in.linkedin.com/satwikkansal"
 github: "https://www.github.com/satwikkansal"
 devpost: "https://devpost.com/xarvis"
-youtube: "#"
-vimeo: "#"
-soundcloud: "#"
+quora: "https://www.quora.com/profile/Satwik-Kansal-1"
+blog: "http://satwikkansal.xyz/blog"
+email: "satwikkansal@gmail.com"
+# youtube: "#"
+# vimeo: "#"
+# soundcloud: "#"
 
 encoding: utf-8
 defaults:

@@ -37,7 +37,7 @@ $from_full_to_noslogan: 935px;
 $from_noslogan_to_icon: 640px;
 
 // header
-$head_bg: $box_bg;
+$head_bg: #292F33;
 
 // search overlay
 $so_bg: rgba(white, .8);
@@ -45,10 +45,10 @@ $so_color: black;
 
 // Menu
 $mainnav_collapse: 1068px;
-$mainnav_bg: $white;
+$mainnav_bg: #292F33;
 $mainnav_border: $line;
-$mainnav_text-transform: uppercase;
-$mainnav_a_color: $a_color;
+$mainnav_text-transform: capitalize;
+$mainnav_a_color: $white;
 $mainnav_a_hover: $a_hover_color;
 $mainnav_a_hover_bg: $lightblue;
 $mainnav_responsive_text_align: center;

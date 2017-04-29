@@ -12,8 +12,8 @@
         <section class="margin">
             <div class="content">
                 {% include author_box.html %}
-                <p class="switch"><b>Switch Layout:</b>&nbsp; &nbsp;
-                &bull; <span id="grid">Grid</span> &nbsp;&bull; <span id="classic">Classic</span></p>
+                <p class="switch">Layout:&nbsp; 
+                <span id="grid">Grid</span> &nbsp; <span id="classic">Classic</span></p>
                 {% if page.title %}<h1 class="title">{{ page.title }}</h1>{% endif %}
                 <div class="articles">
                     {{ content }}
@@ -23,5 +23,8 @@
         </section>
         {% include footer.html %}
         <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
+        <script>
+            $(".sidebar").height($(".articles").height() - $(".pagination").height() - 2*$(".pagination").css('margin'));
+        </script>
     </body>
 </html>

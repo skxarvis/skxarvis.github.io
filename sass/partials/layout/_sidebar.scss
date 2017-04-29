@@ -1,5 +1,6 @@
 .sidebar{
     width: calc(25% - 20px);
+    overflow: scroll;
 
     @media screen and (max-width: $sidebarcollapse){
         width: 100%;
@@ -10,10 +11,20 @@
     }
 }
 
-.category_list {
+.tag_list, .category_list {
 	list-style-type:none !important;
 }
 
-.tag_list {
-	list-style-type:none !important;
+.tag_list > li, .category_list > li {
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 4px !important;
+	border: 1px solid $lightgray;
+	border-radius: 10px;
+	font-size: 0.7em;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }

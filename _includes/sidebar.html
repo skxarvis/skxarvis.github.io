@@ -48,4 +48,16 @@
             {% endfor %}
         </ul>
     </div> -->
+    <div class="widget">
+            <h3 class="title">Github Activities</h3>
+            <div id="feedme">
+    </div>
 </div>
+
+<script>
+GitHubActivity.feed({
+    username: "satwikkansal",
+    selector: "#feedme",
+    limit: 20 // optional
+});
+</script>

@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 
         watch: {
             options: {
-                livereload: true
+                livereload: 35730
             },
             site: {
                 files: ["*.html", "**/*.html", "*.md", "**/*.md", "**/*.yml", "*.yml", "!_site/*.*", "!_site/**/*.*"],
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ["sass/*.scss", "sass/partials/*.scss", "sass/partials/components/*.scss", "sass/partials/layout/*.scss", "sass/modules/*.scss"],
-                tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
+                tasks: ["sass", "autoprefixer"]
             }
         },
 
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve  --watch"
+                command: "jekyll serve"
             },
             jekyllBuild: {
                 command: "jekyll build"
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
     // Default task(s).
 
     grunt.registerTask("serve", ["sass", "shell:jekyllServe"]);
-    grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
+    grunt.registerTask("default", ["sass", "autoprefixer", "watch:css"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };
 

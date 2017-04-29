@@ -18,7 +18,16 @@
     font-family: -apple-system, BlinkMacSystemFont,'.SFNSDisplay-Regular', sans-serif;
     text-transform: capitalize;
     font-weight: bold;
-    font-color: $lightgray;
+    padding:10px;
+}
+
+#logo-name a {
+        color: $white !important;
+}
+
+.fa-home {
+    display: none;
+    color: $white;
 }
 
 #menu{
@@ -148,7 +157,7 @@
             transform: translate(-340px, 20px);
             transition: .3s all ease;
         }
-
+        
         .toggle_link{
             display: block;
             position: absolute;
@@ -210,5 +219,11 @@
 .toggle_link{
     @media screen and (min-width: $mainnav_collapse){
         display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .fa-home {
+        display: block !important;
     }
 }

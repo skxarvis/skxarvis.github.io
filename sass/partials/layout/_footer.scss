@@ -3,9 +3,11 @@ footer{
     box-sizing: border-box;
     padding: 20px;
     border-top: $box_line;
-    background: $box_bg;
+    background: $mainnav_bg;
     font-size: .8em;
     align-self: flex-end;
+
+    color: white;
 
     .content{
         @include flexbox(row, wrap, space-between, center);
@@ -18,4 +20,12 @@ footer{
             cursor: pointer;
         }
     }
+}
+
+footer a {
+    color: $white;
+}
+
+footer .fa{
+    color: $white !important;
 }

@@ -2,7 +2,8 @@
 .switch{
     width: 100%;
     font-size: .8em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 
     @media screen and (max-width: 530px){
         display: none;
@@ -10,6 +11,10 @@
 
     span{
         color: $layoutswitch_a_color;
+        padding: 4px;
+        border: 1px solid $darkgray;
+        border-radius: 5px;
+        background: $white;
 
         &:hover{
             color: $layoutswitch_a_hover_color;
