@@ -1,6 +1,5 @@
 .sidebar{
     width: calc(25% - 20px);
-    overflow: scroll;
 
     @media screen and (max-width: $sidebarcollapse){
         width: 100%;
@@ -27,4 +26,8 @@
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+#feedme {
+    margin-top: 10px;
 }

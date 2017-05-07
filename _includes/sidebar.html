@@ -32,22 +32,6 @@
         </ul>
     </div>
 
-    <!-- <div class="widget">
-        <h3 class="title">Authors</h3>
-        <ul class="author_list">
-            {% for author in site.data.authors %}
-                <li>
-                    <a href="{{ site.author_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ author.id }}">
-                        {% if author.name %}
-                            {{ author.name }}
-                        {% else %}
-                            {{ author.id }}
-                        {% endif %}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div> -->
     <div class="widget">
             <h3 class="title">Github Activities</h3>
             <div id="feedme">
@@ -58,6 +42,6 @@
 GitHubActivity.feed({
     username: "satwikkansal",
     selector: "#feedme",
-    limit: 20 // optional
+    limit: 30
 });
 </script>

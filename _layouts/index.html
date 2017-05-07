@@ -12,6 +12,7 @@
         <section class="margin">
             <div class="content">
                 {% include author_box.html %}
+                <p><b>#TODO: Add all the projects. Till then please checkout my <a href="https://github.com/satwikkansal">"Github"</a> or <a href="http://www.satwikkansal.xyz">"Home page"</a></b></p>
                 <p class="switch">Layout:&nbsp; 
                 <span id="grid">Grid</span> &nbsp; <span id="classic">Classic</span></p>
                 {% if page.title %}<h1 class="title">{{ page.title }}</h1>{% endif %}
@@ -23,8 +24,5 @@
         </section>
         {% include footer.html %}
         <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
-        <script>
-            $(".sidebar").height($(".articles").height() - $(".pagination").height() - 2*$(".pagination").css('margin'));
-        </script>
     </body>
 </html>
