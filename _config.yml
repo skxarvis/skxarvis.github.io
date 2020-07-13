@@ -1,5 +1,5 @@
 name: 'Satwik Kansal'
-description: 'Collection of my projects so far!'
+description: 'Collection of my projects!'
 url: 'http://satwikkansal.xyz'
 gems: [jekyll-paginate]
 baseurl: #place folder name if site is served in subfolder
